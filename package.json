@@ -1,0 +1,27 @@
+{
+  "name": "llm-eval-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An evaluation harness for LLM-powered, document-grounded Q&A: accuracy, citation grounding, abstention, and run-to-run consistency.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "validate:data": "tsx src/validate-dataset.ts",
+    "eval": "tsx src/run.ts",
+    "eval:mock": "tsx src/run.ts --provider mock",
+    "eval:live": "tsx src/run.ts --provider anthropic"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "vitest": "^5.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

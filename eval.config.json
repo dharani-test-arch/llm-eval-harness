@@ -1,0 +1,12 @@
+{
+  "runsPerCase": 5,
+  "thresholds": {
+    "accuracy": 0.9,
+    "abstentionAccuracy": 0.9,
+    "hallucinationRate": 0.02,
+    "citationFaithfulness": 0.98,
+    "formatValidRate": 0.98,
+    "consistency": 0.85,
+    "reliability": 0.8
+  }
+}
